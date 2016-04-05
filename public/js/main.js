@@ -16,11 +16,11 @@ app.controller('searchController', function($scope, $http) {
         });
     };
 
-    // $scope.$watch("query", function(){
-    //     if ($scope.query.length > 0) {
-    //         $scope.getSongs();
-    //     }
-    // });
+    $scope.$watch("query", function(){
+        if ($scope.query.length > 0) {
+            $scope.getSongs();
+        }
+    });
 
     // $scope.getResutls = function () {
     //     var request = {
