@@ -59,6 +59,10 @@ exports.getSearch = function(req, res) {
 
 
         }
+        else {
+          console.log("error");
+          req.flash('errors', errors);
+        }
       });
 
     }
